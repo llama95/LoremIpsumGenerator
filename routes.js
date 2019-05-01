@@ -11,11 +11,10 @@ function homeRoute(request,response){
         // renderer.view("home",response);
         var ipsumData = ipsum.get();
         var ipsumData2 = String(ipsumData);
-        console.log(typeof ipsumData);
-        console.log(typeof ipsumData2);
+        // console.async.log(typeof ipsumData); //undefined
         // var ipsumData2 = ipsumData.toString();
         // //console.log(ipsumData2);
-        response.write(ipsumData2);
+        response.async.write(ipsumData2);
 
         response.end();
         // renderer.view("search",null,response);
